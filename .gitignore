@@ -1,0 +1,6 @@
+*.o
+*.exe
+programme
+labyrinthe
+.vscode/
+.idea/
