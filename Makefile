@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Wpedantic -Iinclude
-SRC = src/main.c src/maze.c src/file.c
+SRC = src/main.c src/maze.c src/file.c src/generator.c
 OBJ = $(SRC:.c=.o)
 EXEC = labyrinthe
 
