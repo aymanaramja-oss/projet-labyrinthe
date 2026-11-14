@@ -25,7 +25,7 @@ int maze_load(Maze *maze, const char *filename) {
         for (int x = 0; x < largeur; x = x + 1) {
             char c = fgetc(fichier);
 
-            if (c == '\n') {
+            while (c == '\n' || c == '\r') {
                 c = fgetc(fichier);
             }
 
