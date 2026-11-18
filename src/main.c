@@ -30,6 +30,8 @@ int main() {
     int resultat = 1;
     char touche = ' ';
 
+    srand(time(NULL));
+
 
     printf("1. Jouer le niveau 1\n");
     printf("2. Jouer un labyrinthe aleatoire\n");
