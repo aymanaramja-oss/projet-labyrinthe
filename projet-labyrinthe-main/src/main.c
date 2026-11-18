@@ -5,7 +5,6 @@
 #include "generator.h"
 #include "player.h"
 
-// Affiche la grille avec le joueur (P) par-dessus
 void afficher(Maze *maze, Player *player) {
     printf("\n");
     for (int y = 0; y < (*maze).height; y = y + 1) {
@@ -21,7 +20,7 @@ void afficher(Maze *maze, Player *player) {
     printf("Cles : %d\n", (*player).keys);
 }
 
-int main(void) {
+int main(int argc, char *argv[]) {
     Maze mon_labyrinthe;
     Player joueur;
     int choix = 0;
@@ -29,7 +28,6 @@ int main(void) {
     int resultat = 1;
     char touche = ' ';
 
-    srand(time(NULL));
 
     printf("1. Jouer le niveau 1\n");
     printf("2. Jouer un labyrinthe aleatoire\n");
