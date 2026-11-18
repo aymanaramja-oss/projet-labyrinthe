@@ -20,7 +20,7 @@ void afficher(Maze *maze, Player *player) {
     printf("Cles : %d\n", (*player).keys);
 }
 
-int main(int argc, char *argv[]) {
+int main() {
     Maze mon_labyrinthe;
     Player joueur;
     int choix = 0;
