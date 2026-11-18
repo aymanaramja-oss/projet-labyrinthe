@@ -20,8 +20,6 @@ void afficher(Maze *maze, Player *player) {
     printf("Cles : %d\n", (*player).keys);
 }
 
-    srand(time(NULL));
-
 int main() {
     Maze mon_labyrinthe;
     Player joueur;
@@ -31,7 +29,6 @@ int main() {
     char touche = ' ';
 
     srand(time(NULL));
-
 
     printf("1. Jouer le niveau 1\n");
     printf("2. Jouer un labyrinthe aleatoire\n");
