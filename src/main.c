@@ -20,6 +20,8 @@ void afficher(Maze *maze, Player *player) {
     printf("Cles : %d\n", (*player).keys);
 }
 
+    srand(time(NULL));
+
 int main() {
     Maze mon_labyrinthe;
     Player joueur;
